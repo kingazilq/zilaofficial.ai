@@ -4,62 +4,47 @@
 <meta charset="UTF-8">
 <title>ZILA-AI</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+<link href="style.css" rel="stylesheet">
 <script defer src="app.js"></script>
 </head>
 <body>
-
 <div id="blackhole-bg">
- <div class="stars"></div>
- <div class="asteroids"></div>
- <div class="blackhole"></div>
+  <div class="stars"></div>
+  <div class="asteroids"></div>
+  <div class="blackhole"></div>
 </div>
 
 <nav>
- <strong>ZILA</strong>
- <div>
-  <a href="index.html">Home</a>
-  <a href="presale.html">Presale</a>
-  <a href="staking.html">Staking</a>
-  <a href="roadmap.html">Roadmap</a>
-  <a href="tokenomics.html">Tokenomics</a>
-  <a href="whitepaper.html">Whitepaper</a>
-  <a href="zila-ai.html">ZILA-AI</a>
- </div>
- <button id="connect" class="wallet">Connect</button>
+  <strong>ZILA</strong>
+  <div class="hamburger">⋮</div>
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="presale.html">Presale</a>
+    <a href="staking.html">Staking</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="task.html">Task</a>
+    <a href="zila-ai.html">ZILA-AI</a>
+    <a href="whitepaper.html">Whitepaper</a>
+    <a href="tokenomics.html">Tokenomics</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+  <button class="wallet" onclick="connectWallet()">Connect Wallet</button>
 </nav>
 
 <section class="card">
-<h1>ZILA-AI</h1>
-
+<h2>ZILA-AI</h2>
 <div class="intro">
-<p>ZILA-AI adalah inti dari ekosistem ZILA, yang memadukan kecerdasan buatan dengan DeFi untuk membangun infrastruktur blockchain generasi berikutnya. Tujuan ZILA-AI adalah menghadirkan transparansi, otomatisasi, dan peluang inovatif bagi seluruh komunitas blockchain.</p>
-
-<p>Dengan ZILA-AI, pengguna dapat: </p>
-<ul>
-<li>Memanfaatkan AI untuk memprediksi tren pasar DeFi</li>
-<li>Menjalankan strategi staking dan presale otomatis</li>
-<li>Mendapatkan analisis data secara real-time</li>
-<li>Meningkatkan keamanan dan efisiensi ekosistem ZILA</li>
-</ul>
-
-<p>Ekosistem ZILA-AI dirancang untuk mendukung pertumbuhan komunitas, membangun trust, dan mempermudah integrasi teknologi AI dalam dunia DeFi.</p>
-</div>
-
-<div class="slider">
- <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9" alt="">
- <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80" alt="">
- <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d1" alt="">
- <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0" alt="">
+<p>ZILA-AI is the artificial intelligence branch of the ZILA ecosystem. Its purpose is to integrate AI into decentralized finance operations, automate smart contract monitoring, and enable predictive analytics for traders and stakers.</p>
+<p>ZILA and ZILA-AI together aim to create a robust, scalable ecosystem where community governance, transparency, and AI-powered insights drive decisions for the next-generation DeFi.</p>
+<p>Users can interact with ZILA-AI for automated staking suggestions, portfolio tracking, and task verification to earn points in the ecosystem.</p>
 </div>
 
 <div class="social">
- <a href="#" target="_blank">X</a>
- <a href="#" target="_blank">Telegram</a>
- <a href="#" target="_blank">YouTube</a>
+  <a href="#">X</a>
+  <a href="#">Telegram</a>
+  <a href="#">YouTube</a>
 </div>
-
+<footer>© 2026 ZILA. All rights reserved.</footer>
 </section>
 </body>
 </html>

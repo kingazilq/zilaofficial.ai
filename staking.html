@@ -4,33 +4,35 @@
 <meta charset="UTF-8">
 <title>ZILA Staking</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+<link href="style.css" rel="stylesheet">
 <script defer src="app.js"></script>
 </head>
 <body>
 <div id="blackhole-bg">
- <div class="stars"></div>
- <div class="asteroids"></div>
- <div class="blackhole"></div>
+  <div class="stars"></div>
+  <div class="asteroids"></div>
+  <div class="blackhole"></div>
 </div>
 
 <nav>
- <strong>ZILA</strong>
- <div>
-  <a href="index.html">Home</a>
-  <a href="presale.html">Presale</a>
-  <a href="staking.html">Staking</a>
-  <a href="roadmap.html">Roadmap</a>
-  <a href="tokenomics.html">Tokenomics</a>
-  <a href="whitepaper.html">Whitepaper</a>
-  <a href="zila-ai.html">ZILA-AI</a>
- </div>
- <button id="connect" class="wallet">Connect</button>
+  <strong>ZILA</strong>
+  <div class="hamburger">⋮</div>
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="presale.html">Presale</a>
+    <a href="staking.html">Staking</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="task.html">Task</a>
+    <a href="zila-ai.html">ZILA-AI</a>
+    <a href="whitepaper.html">Whitepaper</a>
+    <a href="tokenomics.html">Tokenomics</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+  <button class="wallet" onclick="connectWallet()">Connect Wallet</button>
 </nav>
 
 <section class="card">
-<h1>Stake ZILA</h1>
+<h2>🔒 Stake ZILA → Earn ZILA</h2>
 <input id="stakeAmount" placeholder="Amount ZILA">
 <select id="stakePlan">
  <option value="0">Flexible</option>
@@ -38,17 +40,18 @@
  <option value="2">1 Year</option>
 </select>
 <button onclick="stake()">Stake ZILA</button>
-<button onclick="claim()">Claim Reward</button>
+<button onclick="claimStakeReward()">Claim Reward</button>
 <button onclick="unstake()">Unstake</button>
 
-<h3>History</h3>
+<h3>📜 History</h3>
 <div id="stakingHistory" class="history"></div>
 
-<h1>Stake POL</h1>
-<p>1 POL = 1600 ZILA</p>
-<input id="stakePol" placeholder="Minimum 50 POL">
-<button onclick="buyPresale()">Lock POL</button>
-<div id="presaleHistory" class="history"></div>
+<div class="social">
+  <a href="#">X</a>
+  <a href="#">Telegram</a>
+  <a href="#">YouTube</a>
+</div>
+<footer>© 2026 ZILA. All rights reserved.</footer>
 </section>
 </body>
 </html>

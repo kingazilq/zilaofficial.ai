@@ -4,35 +4,60 @@
 <meta charset="UTF-8">
 <title>ZILA Profile</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+<link href="style.css" rel="stylesheet">
 <script defer src="app.js"></script>
 </head>
 <body>
 <div id="blackhole-bg">
- <div class="stars"></div>
- <div class="asteroids"></div>
- <div class="blackhole"></div>
+  <div class="stars"></div>
+  <div class="asteroids"></div>
+  <div class="blackhole"></div>
 </div>
 
 <nav>
- <strong>ZILA</strong>
- <div>
-  <a href="index.html">Home</a>
-  <a href="profile.html">Profile</a>
- </div>
- <button id="connect" class="wallet">Connect</button>
+  <strong>ZILA</strong>
+  <div class="hamburger">⋮</div>
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="presale.html">Presale</a>
+    <a href="staking.html">Staking</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="task.html">Task</a>
+    <a href="zila-ai.html">ZILA-AI</a>
+    <a href="whitepaper.html">Whitepaper</a>
+    <a href="tokenomics.html">Tokenomics</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+  <button class="wallet" onclick="connectWallet()">Connect Wallet</button>
 </nav>
 
 <section class="card">
-<h1>Your Profile</h1>
-<img id="profilePic" src="https://via.placeholder.com/100" style="width:100px;height:100px;border-radius:50%">
-<input id="username" placeholder="Enter username">
-<input type="file" id="profileImg" accept="image/*">
-<input id="walletAddress" placeholder="Enter your wallet address">
+<h2>User Profile</h2>
+<div style="text-align:center;margin-bottom:20px;">
+  <img src="" id="profileImage" style="width:120px;height:120px;border-radius:50%;object-fit:cover;" onclick="changeProfileImage()">
+</div>
+
+<label>Username</label>
+<input type="text" id="profileUsername" placeholder="Enter username">
+
+<label>Wallet Address</label>
+<input type="text" id="profileWallet" placeholder="Enter wallet address">
+<button onclick="saveWallet()">✔ Save Wallet</button>
+
+<label>Bind X Account</label>
+<input type="text" id="bindX" placeholder="Your X account">
+
+<label>Bind Telegram Account</label>
+<input type="text" id="bindTG" placeholder="Your Telegram account">
+
 <button onclick="saveProfile()">Save Profile</button>
-<p>Bind social: <input id="xAcc" placeholder="X account"> <input id="tgAcc" placeholder="Telegram"> <button onclick="saveSocial()">Save</button></p>
-<p id="referralCode">Referral Code: ABCD1234</p>
-<p id="referralLink">Referral Link: https://zila.ai/?ref=ABCD1234</p>
+
+<div class="social">
+  <a href="#">X</a>
+  <a href="#">Telegram</a>
+  <a href="#">YouTube</a>
+</div>
+<footer>© 2026 ZILA. All rights reserved.</footer>
 </section>
 </body>
 </html>

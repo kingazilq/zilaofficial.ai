@@ -4,30 +4,51 @@
 <meta charset="UTF-8">
 <title>ZILA Task</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+<link href="style.css" rel="stylesheet">
 <script defer src="app.js"></script>
 </head>
 <body>
 <div id="blackhole-bg">
- <div class="stars"></div>
- <div class="asteroids"></div>
- <div class="blackhole"></div>
+  <div class="stars"></div>
+  <div class="asteroids"></div>
+  <div class="blackhole"></div>
 </div>
 
 <nav>
- <strong>ZILA</strong>
- <div>
-  <a href="index.html">Home</a>
-  <a href="task.html">Task</a>
- </div>
- <button id="connect" class="wallet">Connect</button>
+  <strong>ZILA</strong>
+  <div class="hamburger">⋮</div>
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="presale.html">Presale</a>
+    <a href="staking.html">Staking</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="task.html">Task</a>
+    <a href="zila-ai.html">ZILA-AI</a>
+    <a href="whitepaper.html">Whitepaper</a>
+    <a href="tokenomics.html">Tokenomics</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+  <button class="wallet" onclick="connectWallet()">Connect Wallet</button>
 </nav>
 
 <section class="card">
-<h1>Earn Points</h1>
+<h2>Earn Points</h2>
 <div id="taskList">
-<!-- JS will populate tasks with links -->
+  <div class="task" onclick="completeTask(1,'https://x.com/post/1')">Follow our X account (100 points)</div>
+  <div class="task" onclick="completeTask(2,'https://x.com/post/2')">Like post #1 (100 points)</div>
+  <div class="task" onclick="completeTask(3,'https://x.com/post/3')">Like post #2 (100 points)</div>
+  <div class="task" onclick="completeTask(4,'https://x.com/post/4')">Comment post #1 (100 points)</div>
+  <div class="task" onclick="completeTask(5,'https://x.com/post/5')">Comment post #2 (100 points)</div>
 </div>
+
+<h3>Total Points: <span id="userPoints">0</span></h3>
+
+<div class="social">
+  <a href="#">X</a>
+  <a href="#">Telegram</a>
+  <a href="#">YouTube</a>
+</div>
+<footer>© 2026 ZILA. All rights reserved.</footer>
 </section>
 </body>
 </html>

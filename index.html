@@ -4,42 +4,42 @@
 <meta charset="UTF-8">
 <title>ZILA Dashboard</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+<link href="style.css" rel="stylesheet">
 <script defer src="app.js"></script>
 </head>
 <body>
-
 <div id="blackhole-bg">
- <div class="stars"></div>
- <div class="asteroids"></div>
- <div class="blackhole"></div>
+  <div class="stars"></div>
+  <div class="asteroids"></div>
+  <div class="blackhole"></div>
 </div>
 
 <nav>
- <strong>ZILA</strong>
- <div>
-  <a href="index.html">Home</a>
-  <a href="presale.html">Presale</a>
-  <a href="staking.html">Staking</a>
-  <a href="roadmap.html">Roadmap</a>
-  <a href="tokenomics.html">Tokenomics</a>
-  <a href="whitepaper.html">Whitepaper</a>
-  <a href="zila-ai.html">ZILA-AI</a>
-  <a href="task.html">Task</a>
-  <a href="leaderboard.html">Leaderboard</a>
-  <a href="profile.html">Profile</a>
-  <a href="register.html">Register</a>
- </div>
- <button id="connect" class="wallet">Connect</button>
+  <strong>ZILA</strong>
+  <div class="hamburger">⋮</div>
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="presale.html">Presale</a>
+    <a href="staking.html">Staking</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="task.html">Task</a>
+    <a href="zila-ai.html">ZILA-AI</a>
+    <a href="whitepaper.html">Whitepaper</a>
+    <a href="tokenomics.html">Tokenomics</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+  <button class="wallet" onclick="connectWallet()">Connect Wallet</button>
 </nav>
 
 <section class="card">
-<h1>Welcome to ZILA Ecosystem</h1>
-<p>Decentralized AI Infrastructure for the Next Generation of DeFi</p>
+<h1>Welcome to ZILA Dashboard</h1>
+<p>Decentralized AI & DeFi ecosystem with staking, presale, tasks, leaderboard, and profile management.</p>
 
 <div class="intro">
-<p>ZILA empowers users to stake, buy tokens, complete tasks, and earn rewards while leveraging AI-driven analytics for smarter decision-making within a secure and community-driven ecosystem.</p>
+ ZILA is a next-generation blockchain ecosystem built to merge
+ decentralized finance, artificial intelligence, and scalable infrastructure.
+ ZILA empowers users to stake, build, and grow within a transparent,
+ secure, and community-driven network designed for the future of Web3.
 </div>
 
 <div class="slider">
@@ -49,14 +49,17 @@
  <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d1" alt="">
 </div>
 
-<div class="social">
- <a href="#" target="_blank">X</a>
- <a href="#" target="_blank">Telegram</a>
- <a href="#" target="_blank">YouTube</a>
+<div class="profile-thumb" style="margin-top:40px;">
+ <img src="" id="userProfileThumb" style="width:80px;height:80px;border-radius:50%;" onclick="window.location.href='profile.html'">
+ <p id="userProfileName"></p>
 </div>
 
-<p style="text-align:center; margin-top:50px; font-size:12px;">&copy; 2026 ZILA. All rights reserved.</p>
-
+<div class="social">
+  <a href="#">X</a>
+  <a href="#">Telegram</a>
+  <a href="#">YouTube</a>
+</div>
+<footer>© 2026 ZILA. All rights reserved.</footer>
 </section>
 </body>
 </html>

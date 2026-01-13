@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ZILA Presale</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+
+<div id="blackhole-bg">
+ <div class="stars"></div>
+ <div class="asteroids"></div>
+ <div class="blackhole"></div>
+</div>
+
+<nav>
+ <strong>ZILA</strong>
+ <div>
+  <a href="index.html">Home</a>
+  <a href="presale.html">Presale</a>
+  <a href="staking.html">Staking</a>
+  <a href="roadmap.html">Roadmap</a>
+  <a href="tokenomics.html">Tokenomics</a>
+  <a href="whitepaper.html">Whitepaper</a>
+  <a href="zila-ai.html">ZILA-AI</a>
+ </div>
+ <button id="connect" class="wallet">Connect</button>
+</nav>
+
+<section class="card">
+<h1>ZILA Private Presale</h1>
+
+<div class="info">
+ <div>
+  <h3>Price</h3>
+  <p>1 ZILA = 0.000625 POL</p>
+ </div>
+ <div>
+  <h3>Rate</h3>
+  <p>1 POL = 1600 ZILA</p>
+ </div>
+ <div>
+  <h3>Funds Raised</h3>
+  <p>15,000 POL</p>
+ </div>
+</div>
+
+<h3>Buy ZILA</h3>
+<input id="buyPol" placeholder="Minimum 20 POL">
+<button onclick="buyPresale()">Buy ZILA</button>
+<p class="note">⚠ Minimum 20 POL</p>
+
+<button onclick="claimPresale()">Claim ZILA</button>
+
+<h3>ZILA Private Market</h3>
+<canvas id="chart" height="120"></canvas>
+<div id="priceLabel" class="price-label"></div>
+
+<h3>Purchase History</h3>
+<div id="presaleHistory" class="history"></div>
+</section>
+</body>
+</html>

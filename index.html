@@ -2,38 +2,38 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>ZILA Dashboard</title>
+<title>ZILA Ecosystem</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 <script defer src="app.js"></script>
 </head>
 <body>
 <div id="blackhole-bg">
-  <div class="stars"></div>
-  <div class="asteroids"></div>
-  <div class="blackhole"></div>
+ <div class="stars"></div>
+ <div class="asteroids"></div>
+ <div class="blackhole"></div>
 </div>
 
 <nav>
-  <strong>ZILA</strong>
-  <div class="hamburger">⋮</div>
-  <div class="menu">
-    <a href="index.html">Home</a>
-    <a href="presale.html">Presale</a>
-    <a href="staking.html">Staking</a>
-    <a href="leaderboard.html">Leaderboard</a>
-    <a href="task.html">Task</a>
-    <a href="zila-ai.html">ZILA-AI</a>
-    <a href="whitepaper.html">Whitepaper</a>
-    <a href="tokenomics.html">Tokenomics</a>
-    <a href="#" onclick="logout()">Logout</a>
-  </div>
-  <button class="wallet" onclick="connectWallet()">Connect Wallet</button>
+ <strong>ZILA</strong>
+ <button id="menuBtn">☰</button>
+ <div class="nav-links hidden">
+  <a href="index.html">Home</a>
+  <a href="presale.html">Presale</a>
+  <a href="staking.html">Staking</a>
+  <a href="roadmap.html">Roadmap</a>
+  <a href="tokenomics.html">Tokenomics</a>
+  <a href="whitepaper.html">Whitepaper</a>
+  <a href="zila-ai.html">ZILA-AI</a>
+  <a href="profile.html" id="profileLink">Profile</a>
+  <a href="#" id="logoutBtn" class="hidden">Logout</a>
+ </div>
+ <button id="connect" class="wallet">Connect Wallet</button>
 </nav>
 
 <section class="card">
-<h1>Welcome to ZILA Dashboard</h1>
-<p>Decentralized AI & DeFi ecosystem with staking, presale, tasks, leaderboard, and profile management.</p>
+<h1>ZILA Ecosystem</h1>
+<p>Decentralized AI Infrastructure for the Next Generation of DeFi</p>
 
 <div class="intro">
  ZILA is a next-generation blockchain ecosystem built to merge
@@ -49,17 +49,15 @@
  <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d1" alt="">
 </div>
 
-<div class="profile-thumb" style="margin-top:40px;">
- <img src="" id="userProfileThumb" style="width:80px;height:80px;border-radius:50%;" onclick="window.location.href='profile.html'">
- <p id="userProfileName"></p>
+<div class="social">
+ <a href="#" target="_blank">X</a>
+ <a href="#" target="_blank">Telegram</a>
+ <a href="#" target="_blank">YouTube</a>
 </div>
 
-<div class="social">
-  <a href="#">X</a>
-  <a href="#">Telegram</a>
-  <a href="#">YouTube</a>
-</div>
-<footer>© 2026 ZILA. All rights reserved.</footer>
+<footer>
+ <p>© 2026 ZILA. All rights reserved.</p>
+</footer>
 </section>
 </body>
 </html>

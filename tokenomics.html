@@ -4,47 +4,52 @@
 <meta charset="UTF-8">
 <title>ZILA Tokenomics</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+<link href="style.css" rel="stylesheet">
 <script defer src="app.js"></script>
 </head>
 <body>
-
 <div id="blackhole-bg">
- <div class="stars"></div>
- <div class="asteroids"></div>
- <div class="blackhole"></div>
+  <div class="stars"></div>
+  <div class="asteroids"></div>
+  <div class="blackhole"></div>
 </div>
 
 <nav>
- <strong>ZILA</strong>
- <div>
-  <a href="index.html">Home</a>
-  <a href="presale.html">Presale</a>
-  <a href="staking.html">Staking</a>
-  <a href="roadmap.html">Roadmap</a>
-  <a href="tokenomics.html">Tokenomics</a>
-  <a href="whitepaper.html">Whitepaper</a>
-  <a href="zila-ai.html">ZILA-AI</a>
- </div>
- <button id="connect" class="wallet">Connect</button>
+  <strong>ZILA</strong>
+  <div class="hamburger">⋮</div>
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="presale.html">Presale</a>
+    <a href="staking.html">Staking</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="task.html">Task</a>
+    <a href="zila-ai.html">ZILA-AI</a>
+    <a href="whitepaper.html">Whitepaper</a>
+    <a href="tokenomics.html">Tokenomics</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+  <button class="wallet" onclick="connectWallet()">Connect Wallet</button>
 </nav>
 
 <section class="card">
-<h1>ZILA Tokenomics</h1>
-<div class="intro">
-<p>Total Supply: 1,000,000,000 ZILA</p>
+<h2>ZILA Tokenomics</h2>
 <ul>
-<li>Staking: 40%</li>
-<li>Liquidity: 10% (locked)</li>
-<li>Team & Dev: 10% (locked 2 tahun)</li>
-<li>Ekosistem: 20%</li>
-<li>Airdrop: 10%</li>
-<li>Burn: 5%</li>
-<li>Partnership: 5%</li>
+  <li>Total Supply: 1,000,000,000 ZILA</li>
+  <li>Staking: 40%</li>
+  <li>Liquidity: 10%</li>
+  <li>Team & Dev: 10% (locked 2 years)</li>
+  <li>Ecoystem: 20%</li>
+  <li>Airdrop: 10%</li>
+  <li>Burn: 5%</li>
+  <li>Partnership: 5%</li>
 </ul>
-<p>Tokenomics dirancang untuk pertumbuhan jangka panjang, likuiditas aman, dan komunitas yang solid.</p>
+
+<div class="social">
+  <a href="#">X</a>
+  <a href="#">Telegram</a>
+  <a href="#">YouTube</a>
 </div>
+<footer>© 2026 ZILA. All rights reserved.</footer>
 </section>
 </body>
 </html>

@@ -4,24 +4,33 @@
 <meta charset="UTF-8">
 <title>ZILA Register</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+<link href="style.css" rel="stylesheet">
 <script defer src="app.js"></script>
 </head>
 <body>
 <div id="blackhole-bg">
- <div class="stars"></div>
- <div class="asteroids"></div>
- <div class="blackhole"></div>
+  <div class="stars"></div>
+  <div class="asteroids"></div>
+  <div class="blackhole"></div>
 </div>
 
 <section class="card">
-<h1>Register / Login</h1>
-<input id="regUsername" placeholder="Username">
-<input id="regEmail" placeholder="Email">
-<input id="regPassword" type="password" placeholder="Password">
-<input id="refCode" placeholder="Referral Code (optional)">
-<button onclick="register()">Register</button>
-<p>Login via Wallet / Email / Google</p>
+<h2>Register / Login</h2>
+<label>Username</label>
+<input type="text" id="regUsername" placeholder="Username">
+<label>Email</label>
+<input type="email" id="regEmail" placeholder="Email">
+<label>Password</label>
+<input type="password" id="regPassword" placeholder="Password">
+<label>Referral Code</label>
+<input type="text" id="regReferral" placeholder="Optional">
+<button onclick="registerUser()">Register</button>
+
+<p id="verifyNote"></p>
+
+<h3>Or login with:</h3>
+<button onclick="loginWithGoogle()">Google</button>
+<button onclick="connectWallet()">Wallet + Email Verification</button>
 </section>
 </body>
 </html>
